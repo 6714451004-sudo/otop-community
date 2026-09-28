@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Shadow Effect -->
+    <filter id="drop-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Base Circle with Shadow -->
+  <circle cx="250" cy="250" r="230" fill="#EBF6EC" filter="url(#drop-shadow)" />
+  
+  <!-- Outer Border Lines -->
+  <circle cx="250" cy="250" r="228" fill="none" stroke="#82C48C" stroke-width="6" />
+  <circle cx="250" cy="250" r="210" fill="none" stroke="#1E5E2F" stroke-width="2.5" stroke-dasharray="8 6" />
+
+  <!-- Main Title (Replacing Broken Font with Thai Text) -->
+  <text x="250" y="115" font-family="'Sarabun', 'Prompt', sans-serif" font-size="28" font-weight="bold" fill="#1E5E2F" text-anchor="middle" letter-spacing="2">
+    ร้านผักสด
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="250" y="145" font-family="'Montserrat', 'Arial', sans-serif" font-size="16" font-weight="600" fill="#2E7D32" text-anchor="middle" letter-spacing="4">
+    VEGGIE MARKET
+  </text>
+
+  <!-- Stars -->
+  <g fill="#FBC02D">
+    <!-- Left Star -->
+    <polygon points="208,160 210,166 216,166 211,170 213,176 208,172 203,176 205,170 200,166 206,166" />
+    <!-- Center Star (Larger) -->
+    <polygon points="250,152 253,161 262,161 255,166 257,175 250,170 243,175 245,166 238,161 247,161" />
+    <!-- Right Star -->
+    <polygon points="292,160 294,166 300,166 295,170 297,176 292,172 287,176 289,170 284,166 290,166" />
+  </g>
+
+  <!-- Vegetables Group -->
+  <g id="vegetables">
+    <!-- Smile Arc Line -->
+    <path d="M 190 280 Q 250 320 310 280 Q 250 300 190 280 Z" fill="#1B5E20" />
+
+    <!-- Carrot (Left) -->
+    <g id="carrot">
+      <!-- Leaves -->
+      <path d="M 142 195 C 130 170, 140 170, 142 195 Z" fill="#4CAF50" />
+      <path d="M 152 190 C 150 160, 162 165, 155 190 Z" fill="#388E3C" />
+      <path d="M 163 198 C 175 175, 182 185, 165 202 Z" fill="#66BB6A" />
+      <!-- Body -->
+      <path d="M 145 215 L 180 232 L 196 320 Q 185 315 145 215 Z" fill="#FF7043" />
+      <path d="M 145 215 Q 165 210 180 232 Q 160 230 145 215 Z" fill="#FFA726" />
+      <!-- Texture Lines -->
+      <path d="M 160 250 Q 170 255 175 252" stroke="#F57C00" stroke-width="2" stroke-linecap="round" fill="none" />
+      <path d="M 170 275 Q 178 280 182 277" stroke="#F57C00" stroke-width="2" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Cabbage / Onion (Center) -->
+    <g id="cabbage">
+      <circle cx="250" cy="225" r="48" fill="#388E3C" />
+      <circle cx="250" cy="225" r="38" fill="#66BB6A" />
+      <circle cx="250" cy="225" r="26" fill="#A5D6A7" />
+      <circle cx="250" cy="225" r="14" fill="#C8E6C9" />
+    </g>
+
+    <!-- Tomato (Right) -->
+    <g id="tomato">
+      <!-- Body -->
+      <circle cx="320" cy="250" r="42" fill="#E53935" />
+      <!-- Highlight -->
+      <path d="M 298 230 A 30 30 0 0 1 315 220 A 35 35 0 0 0 292 242 Z" fill="#EF9A9A" opacity="0.7" />
+      <!-- Stem & Leaves -->
+      <path d="M 320 212 C 322 200, 332 192, 332 192 C 332 192, 323 204, 320 208 Z" fill="#2E7D32" />
+      <path d="M 320 210 L 305 212 L 315 218 L 320 226 L 325 218 L 335 215 L 320 210 Z" fill="#4CAF50" />
+    </g>
+  </g>
+
+  <!-- Banner -->
+  <g id="banner" filter="url(#drop-shadow)">
+    <!-- Banner Ribbons (Back Sides) -->
+    <path d="M 95 345 L 120 330 L 120 370 Z" fill="#0D3B18" />
+    <path d="M 405 345 L 380 330 L 380 370 Z" fill="#0D3B18" />
+    <!-- Banner Tails -->
+    <polygon points="120,330 90,345 120,360 100,345" fill="#1E5E2F" />
+    <polygon points="380,330 410,345 380,360 400,345" fill="#1E5E2F" />
+    <!-- Main Banner Body -->
+    <rect x="110" y="325" width="280" height="45" rx="3" fill="#1E5E2F" />
+    <!-- Banner Text -->
+    <text x="250" y="355" font-family="'Montserrat', 'Arial Black', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">
+      FRESH &amp; ORGANIC
+    </text>
+  </g>
+
+  <!-- Bottom Text (Replacing Broken Font) -->
+  <g id="bottom-text">
+    <circle cx="155" cy="412" r="3" fill="#1E5E2F" />
+    <text x="250" y="417" font-family="'Sarabun', 'Prompt', sans-serif" font-size="14" font-weight="500" fill="#1E5E2F" text-anchor="middle" letter-spacing="2">
+      ผักสดปลอดภัย ส่งตรงจากฟาร์ม
+    </text>
+    <circle cx="345" cy="412" r="3" fill="#1E5E2F" />
+  </g>
+</svg>
